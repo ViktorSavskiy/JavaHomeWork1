@@ -1,40 +1,51 @@
+/*let num1 = Number(prompt('Введите число которое нужно возвести в куб'));
+function Stepen3(x) {
+    console.log(Math.pow(x, 3));
+}
+Stepen3(num1);
+
+
+let num2 = Number(prompt('Введите число 1'));
+let num3 = Number(prompt('Введите число 2'));
+function sumStepen3(y, z) {
+    console.log(Math.pow(y, 3) + Math.pow(z, 3));
+}
+sumStepen3(num2, num3);
+
+
+let razmerOplaty = prompt('Введите размер зарплаты');
+function oplata(op) {
+    console.log('Размер заработной платы за вычетом налогов равен значение' + ' ' + (op - op * 0.13));
+}
+oplata(razmerOplaty);
+
+
+let num4 = Number(prompt('Введите число 3'));
+let num5 = Number(prompt('Введите число 4'));
+let num6 = Number(prompt('Введите число 5'));
+function maxFrom3(y, z, x) {
+    console.log('Максимальное число' + ' ' + Math.max(y, z, x));
+}
+maxFrom3(num4, num5, num6);*/
+
+
 let num1 = Number(prompt('Введите число 1'));
-if (num1 == 1) {
-    alert( "Число 1 равно 1" );
-}
-if (num1 > 1) {
-    alert( "Число 1 больше 1" );
-}
-if (num1 < 1) {
-    alert( "Число 1 меньше 1" );
-}
 let num2 = Number(prompt('Введите число 2'));
-if (num2 == 3) {
-    alert( "Число 2 равно 3" );
+function sum(x, y) {
+    console.log(x + y);
 }
-if (num2 > 3) {
-    alert( "Число 2 больше 3" );
+function raznost(x, y) {
+    z = Math.max(x, y);
+    b = Math.min(x, y);
+    console.log(z - b);
 }
-if (num2 < 3) {
-    alert( "Число 2 меньше 3" );
+function umnoj(x, y) {
+    console.log(x * y);
 }
-
-
-let test = true;
-if (test === true) {
-console.log('+++');
-} else {
-console.log('---');
+function delen(x, y) {
+    console.log(x / y);
 }
-
-
-let day = Number(prompt('Введите число от 1 до 31'));
-if (day >= 20) {
-    alert( "Третья декада" );
-}
-if (day < 10) {
-    alert( "Первая декада" );
-}
-if (10 < day < 20) {
-    alert( "Вторая декада" );
-}
+sum(num1, num2);
+raznost(num1, num2);
+umnoj(num1, num2);
+delen(num1, num2);
